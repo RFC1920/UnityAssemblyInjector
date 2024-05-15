@@ -12,13 +12,14 @@
 #include <strsafe.h>
 #include <filesystem>
 
-#include "deps/include/MinHook.h"
+//#include "deps/include/MinHook.h"
+#include "MinHook.h"
 #include "Utils.h"
 
 #if _M_IX86
-#pragma comment(lib, "deps/lib/MinHook-x86.lib")
+#pragma comment(lib, "../packages/minhook.1.3.3/lib/native/lib/libMinHook-x86.lib")
 #else
-#pragma comment(lib, "deps/lib/MinHook-x64.lib")
+#pragma comment(lib, "../packages/minhook.1.3.3/lib/native/lib/libMinHook-x64.lib")
 #endif
 
 #ifdef _DEBUG
